@@ -147,5 +147,10 @@ fun workingWithTemplates(){
     println("Expressions (string size): first string is ${firstString.length}")
     println("Expressions (substring): ${firstString.substring(0,2)}")
 }
+fun nullSafety(){
+    var aString :String? = "abc"
+    val size = aString?.length ?: -1
+    aString = null
+}
 
 
