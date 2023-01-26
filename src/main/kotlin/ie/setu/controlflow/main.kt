@@ -20,6 +20,7 @@ fun main(args: Array<String>) {
     doWhileExample()
     workingWithStrings()
     printValue(2)
+    workingWithTemplates()
 }
 
 fun printValue(value: Int) = when (value) {
@@ -136,5 +137,15 @@ fun workingWithStrings() {
     println(franklin)
 }
 
+fun workingWithTemplates(){
+    var firstString = " This is a String"
+    var secondString = "and this is another String"
+
+    println("Simple names: $firstString $secondString")
+
+    println("Expressions (cases): ${firstString.uppercase()} ${secondString.lowercase()}")
+    println("Expressions (string size): first string is ${firstString.length}")
+    println("Expressions (substring): ${firstString.substring(0,2)}")
+}
 
 
